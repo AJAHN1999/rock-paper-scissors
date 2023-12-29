@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "rps.js"></script>
+    <script src = "rps.js" defer></script>
     <title>Rock-Paper-Scissors</title>
     <link rel = "stylesheet" href = "./rps.css">
 </head>
 <body>
     <div class="heading">
-        <h1>Welcome to Rock-Paper-Scissors</h1>
+       <h1>Rock-Paper-Scissors</h1>
+        <h2 style="font-size: 18px;">First  to  win  5  rounds wins the game!</h2>    </div>
+    <div>
+        <p class="rpsPrompt"></p>
     </div>
-    <div class="buttonsContainer">
-        <button>rock</button>
-        <button>Paper</button>
-        <button>Scissors</button>
+    <div class = 'computerChoice'>
+        <p id="computerOption"></p>
+    </div>
+    <div class = 'playerChoice'>
+        <p id="playerOption"></p>
+    </div>
+    <div>
+        <p class="scoreKeeper"></p>
     </div>
     <div class = "MessageContainer">
-        <h2></h2>
+        <p id="message"><p>
     </div>
+    <div class="buttonsContainer">
+        <div class="playableButtons">
+            <button class = 'rockButton' value="3">rock</button>
+            <button class = 'paperButton' value ='1'>Paper</button>
+            <button class = 'scissorsButton' value="'2">Scissors</button>   
+        </div>   
+        <div id = 'playButtonContainer'>
+            <button class= 'playButton'>Play</button>
+        </div>
+    </div>  
+    
     
     
 </body>
