@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "rps.js" defer></script>
+    <script src="rps.js" defer></script>
     <title>Rock-Paper-Scissors</title>
-    <link rel = "stylesheet" href = "./rps.css">
+    <link rel="stylesheet" href="./rps.css">
 </head>
+
 <body>
     <div class="heading">
-       <h1>Rock-Paper-Scissors</h1>
-        <h2 style="font-size: 18px;">First  to  win  5  rounds wins the game!</h2>    </div>
-    <div>
-        <p class="rpsPrompt"></p>
+        <h1>Rock-Paper-Scissors</h1>
+        <h2 style="font-size: 18px;">First to win 5 rounds wins the game!</h2>
     </div>
-    <div class = 'computerChoice'>
-        <p id="computerOption"></p>
-    </div>
-    <div class = 'playerChoice'>
-        <p id="playerOption"></p>
-    </div>
-    <div>
-        <p class="scoreKeeper"></p>
-    </div>
-    <div class = "MessageContainer">
-        <p id="message"><p>
-    </div>
-    <div class="buttonsContainer">
-        <div class="playableButtons">
-            <button class = 'rockButton' value="3">rock</button>
-            <button class = 'paperButton' value ='1'>Paper</button>
-            <button class = 'scissorsButton' value="'2">Scissors</button>   
-        </div>   
-        <div id = 'playButtonContainer'>
-            <button class= 'playButton'>Play</button>
+    <div class = "body">
+        <div class="body1">
+            <div class='playerChoice'>
+                <p>Player</p>
+                <p id="playerOption"></p>
+            </div>
         </div>
-    </div>  
+        <div class="body2">
+            <div class= "promptKeeper">
+                <p class="rpsPrompt"></p>
+                <p class="scoreKeeper"></p>
+                <p id="message"><p>
+            </div>
+            <div class="buttonsContainer">
+                <div class="playableButtons">
+                    <button class='rockButton' value="3">Rock<img class = "image-icon"src="./fist.svg"/></button>
+                    <button class='paperButton' value='1'>paper<img class = "image-icon"src= "./waving-hand.svg"/></button>
+                    <button class='scissorsButton' value="'2">scissors<img class = "image-icon" src="./victory-hand.svg"/></button>
+                </div>
+                <div id='playButtonContainer'>
+                    <button class='playButton'>Play</button>
+                </div>  
+            </div>
+        </div>
+        <div class="body3">
+            <div class="computerChoice">
+                <p>Computer</p>
+                <p id="computerOption"></p>
+            </div>
+            
+        </div>
+    </div>
     
-    
-    
+
+
+
 </body>
+
 </html>
